@@ -26,7 +26,6 @@ from utils.rewardbench_utils import (
     torch_dtype_mapping,
 )
 from utils.utils import load_json, save_json
-from utils.conversation import get_conv_template
 from prompts import RewardExperimentPromptHandler
 
 # Enable TensorFloat32 (TF32) tensor cores on Ampere GPUs for matrix multiplications (faster than FP32)
@@ -138,6 +137,12 @@ def main():
             tmp_score_list.append(score[0])
             tmp_sol_list.append(sol_ref)
         
+    save_dir = "/".join(args.save_path.split("/")[:-1])
+    save_dir = os.path.dirname(args.save_path)
+    if save_dir:
+        os.makedirs(save_dir, exist_ok=True)
+        print(f"Created directory: {save_dir}")
+    
     # save the results
     save_json(args.save_path, save_dataset)
 
