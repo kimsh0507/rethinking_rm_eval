@@ -21,11 +21,16 @@ pip install -e .
 
 
 ## 🚀 Quick Start
-
-The bash script `run_eto.sh` implements the ETO pipeline. For example, you can run:
+### Inference Classifier-based Reward Models
 ```bash
-bash run_eto.sh webshop
+bash scripts/run_classifier_rm.sh
 ```
+
+### Inference Process Reward Mmodels
+```bash
+bash scripts/run_prm.sh
+```
+
 
 ## 👏 Acknowledgements
 
