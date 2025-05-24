@@ -40,4 +40,10 @@ The underlying codebase for evaluating reward model from [RewardBench](https://g
 ## Citation 
 
 ```bibtex
+@article{kim2025rethinking,
+  title={Rethinking Reward Model Evaluation Through the Lens of Reward Overoptimization},
+  author={Kim, Sunghwan and Kang, Dongjin and Kwon, Taeyoon and Chae, Hyungjoo and Lee, Dongha and Yeo, Jinyoung},
+  journal={arXiv preprint arXiv:2505.12763},
+  year={2025}
+}
 ```
